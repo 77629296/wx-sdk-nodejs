@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>用户信息</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.weixinsxy.com/jssdk/css/style.css" />
+  </head>
+
+  <body>
+    <div class="wxapi_container">
+      <div class="lbox_close wxapi_form">
+        <h3 id="menu-basic">用户信息</h3>
+        <span class="desc">openid: {{ openid }}</span>
+        {% if headimgurl %}
+        <p>
+          <img alt="" src="{{ headimgurl }}" />
+        </p>
+        <span class="desc">昵称: {{ nickname }}</span>
+        <span class="desc">国家: {{ country }}</span>
+        <span class="desc">省份: {{ province }}</span>
+        <span class="desc">性别: {{ sex }}</span>
+        {% endif %}
+</html>

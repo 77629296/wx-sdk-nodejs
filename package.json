@@ -3,11 +3,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "engines": {
+    "node": "10.22.0"
+  },
   "scripts": {
     "test": "lerna run test",
     "bootstrap": "lerna bootstrap",
-    "tsc": "lerna run tsc --stream",
-    "tsc:watch": "lerna run watch --stream",
+    "build": "lerna run tsc --stream",
+    "build:watch": "lerna run watch --stream",
     "pub": "lerna publish --skip-git",
     "del": "lerna exec -- rm -rf ./dist"
   },

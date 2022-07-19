@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>微信公众号授权页面</title>
+    <link rel="stylesheet" href="https://www.weixinsxy.com/jssdk/css/style.css" />
+  </head>
+  <body style="align-items: center;">
+    <h3 id="menu-share">网页授权</h3>
+    <span class="desc">仅获取openid，不能获取用户基本信息</span>
+    <button class="btn btn_primary"><a target="_blank" href="{{ authUrl + '&scope=snsapi_base#wechat_redirect' }}">静默授权</a></button>
+    <span class="desc">授权后可获取openid，用户基本信息。</span>
+    <button class="btn btn_primary"><a target="_blank" href="{{ authUrl + '&scope=snsapi_userinfo#wechat_redirect' }}">弹框授权</a></button>
+  </body>
+</html>
