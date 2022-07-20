@@ -1,8 +1,5 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "engines": {
     "node": "10.22.0"
   },
@@ -12,7 +9,8 @@
     "build": "lerna run tsc --stream",
     "build:watch": "lerna run watch --stream",
     "pub": "lerna publish --skip-git",
-    "del": "lerna exec -- rm -rf ./dist"
+    "del": "lerna exec -- rm -rf ./dist",
+    "clean": "lerna clean"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
